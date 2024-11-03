@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gửi bé Yel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+        .message-box {
+            display: none;
+            text-align: center;
+            background-color: #ffebcc;
+            padding: 20px;
+            border: 2px solid #ff9800;
+            border-radius: 10px;
+            max-width: 400px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #ff9800;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #e68a00;
+        }
+    </style>
+</head>
+<body>
+
+<button onclick="showMessage()">Nhấn vào để xem</button>
+
+<div class="message-box" id="messageBox">
+    <p>Yel à, duma em em có biết là cứ mỗi khi em rep anh chậm 1 phút, em bơ anh 2 phút, em đi ngủ bỏ anh 8 tiếng, anh buồn lắm không? Nhưng dù sao anh vẫn yêu em, duma em ❤️</p>
+</div>
+
+<script>
+    function showMessage() {
+        const messageBox = document.getElementById('messageBox');
+        messageBox.style.display = 'block';
+    }
+</script>
+
+</body>
+</html>
